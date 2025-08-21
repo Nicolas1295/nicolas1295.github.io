@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(120, 120, 184);
+    
+}
+h1{
+    color: rgb(255, 0, 0);
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+h2{
+    color: rgb(0, 255, 0);
+}
+a{
+    color: white;
+}
+
+.primaria {
+    color: blueviolet;
+}
+#parrafo1{
+    color: rgb(123, 090, 003);
+}
+h6{
+    font-size: 300px;
+
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid rgb(0, 255, 0);
+}
