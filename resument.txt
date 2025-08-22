@@ -1,0 +1,101 @@
+ FORMULARIOS HTML — GUÍA BÁSICA EXPLICADA CLARAMENTE
+
+🔹 1. Estructura básica del formulario:
+
+<form action="/enviar_datos" method="get">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+</form>
+
+🧠 Explicación:
+
+- <form>: Comienza el formulario
+- action="/enviar_datos": A dónde se envían los datos al hacer clic en "Enviar"
+- method="get": El método para enviar los datos (por la URL en este caso)
+- <label for="nombre">: Etiqueta que acompaña al campo. 'for' debe coincidir con el 'id'
+- <input type="text" ...>: Campo para que el usuario escriba (nombre, texto corto)
+- placeholder="...": Texto gris que desaparece al empezar a escribir
+
+🎯 Importante:
+- `for` y `id` deben ser IGUALES para que el label funcione correctamente.
+- `name` define el nombre del dato que se enviará al servidor.
+- `type` define qué tipo de campo es (texto, email, contraseña, etc.).
+
+📌 ¿Por qué `for` y `id` deben coincidir?
+
+Porque eso es lo que conecta un `<label>` con su `<input>` correspondiente.
+
+✅ Ejemplo correcto:
+
+<label for="correo">Correo:</label>
+<input type="email" id="correo">
+
+- Si haces clic en “Correo:”, el cursor entra en el campo de email.
+- Accesible, práctico y claro.
+
+❌ Ejemplo incorrecto:
+
+<label for="correo">Correo:</label>
+<input type="email" id="email">
+
+- El `for` no encuentra un `id` que coincida.
+- El clic en el label no hace nada.
+
+🔎 Beneficios de hacerlo bien:
+1. Mejora la usabilidad (puedes hacer clic en el texto)
+2. Mejora la accesibilidad (ayuda a lectores de pantalla)
+3. Claridad en el código
+
+🧠 Regla de oro:
+<etiqueta for="x"> ➡ debe coincidir con <input id="x">
+
+📌 Algunos tipos comunes de input:
+
+<input type="text">       → Texto normal  
+<input type="email">      → Campo para correos  
+<input type="password">   → Oculta lo que se escribe  
+<input type="number">     → Solo permite números  
+<input type="checkbox">   → Casilla ✔  
+<input type="submit">     → Botón para enviar  
+
+📤 ¿Qué hace el atributo `action`?
+
+- Especifica a dónde se mandan los datos del formulario.
+- Puede ser:
+  - Una página en tu sitio → action="gracias.html"
+  - Un archivo de procesamiento → action="procesar.php"
+  - Una URL externa → action="https://otroservidor.com"
+  - Vacío → action=""  (se queda en la misma página)
+
+✅ Ejemplo de formulario completo:
+
+<form action="gracias.html" method="get">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+    <button type="submit">Enviar</button>
+</form>
+
+🟢 Resultado al enviar:
+Si el usuario escribe "Carlos", el navegador redirige a:
+gracias.html?nombre=Carlos
+
+✨ Puedes crear tu propia página gracias.html con este contenido:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gracias</title>
+</head>
+<body>
+  <h1>¡Gracias por enviar el formulario!</h1>
+</body>
+</html>
+
+📝 En resumen:
+
+- `id` = usado para conectar <label> y <input>, también útil para CSS y JavaScript.
+- `for` = debe coincidir con `id` del campo.
+- `name` = es lo que se envía al servidor como clave del dato.
+- `type` = define qué tipo de input es.
+- `action` = define A DÓNDE se van los datos.
+- `method` = define CÓMO se envían (GET = URL, POST = ocultos)

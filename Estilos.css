@@ -1,0 +1,125 @@
+
+.Caja:hover{
+    width: fit-content;
+    height: fit-content;
+    margin: 90px;
+    padding: 20px;
+    border: 5px double rgb(22, 17, 153);
+}
+
+h1{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    padding: 10px;
+    /* none, solid, dashed, dotted, double, groove, ridge, inset, outset */
+    border: 2px solid rgb(15, 9, 128);
+}
+
+.contenedor{
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    gap: 10px;
+    /*width: 100px;
+    height: 100px;*/
+
+}
+
+.grid-item:hover{
+    background-color: rgb(103, 95, 250);
+    padding: 20px;
+    animation: mover 3s;
+
+}
+
+
+@keyframes mover {
+    0% { transform: translateX(0); }
+    20% { transform: translateY(35px);}
+    100% { transform: translate(100px, 35px); }
+}
+
+@media(max-width:600px){
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+}
+
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+    table {
+        width: 50%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #671111;
+        text-align: center;
+    }
+    th {
+        background-color: #a07272;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    form input{
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button{
+        background-color: aqua;
+        border: none;
+        cursor: pointer;
+    }
+
+    .formularios1 {
+    text-align: center;
+}
+
+.video{
+    text-align: center;
+}
+
+.video2{
+    text-align: center;
+}
+
+.mapa {
+  text-align: center;
+}
+
+body {
+  background-image: url("ds3.gif"); /* o una URL externa */
+  background-size: cover;            /* ajusta la imagen al tamaño de pantalla */
+  background-position: center;       /* centra la imagen */
+  background-repeat: no-repeat;      /* evita que se repita */
+  background-attachment: fixed;      /* opcional: imagen fija al hacer scroll */
+}
+
