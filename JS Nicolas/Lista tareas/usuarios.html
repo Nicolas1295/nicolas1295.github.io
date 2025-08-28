@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="usuarios.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Lista de Usuarios</h1>
+        <br>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="text" id="telefono" name="telefono" placeholder="Teléfono">
+        <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+        <input type="text" id="pais" name="pais" placeholder="País">
+        <br><br>
+        <button onclick="guardarUsuario()">Guardar</button>
+        <button onclick="borrarTabla()">Limpiar</button>
+    </div>
+
+    <div id="listausuarios">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Ciudad</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpotabla">
+                <!-- Los usuarios se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="usuarios.js"></script>
+</body>
+</html>

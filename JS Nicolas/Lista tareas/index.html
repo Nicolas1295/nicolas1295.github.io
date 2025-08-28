@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="listatareas.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>lista de tareas</h1>
+        <br>
+        <input type="text" id="titulo" name="titulo">
+        <textarea name="descripcion" id="descripcion"></textarea>
+        <input type="date" id="fecha" name="fecha">
+        <button onclick="guardartarea()">guardar</button>
+        <button onclick="limpiar()">limpiar</button>
+    </div>
+
+    <div class="listaTareas">
+        <ol id="tareas">
+            <!-- Las tareas se agregarán aquí -->
+        </ol>
+
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

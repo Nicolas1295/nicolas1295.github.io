@@ -1,0 +1,31 @@
+.contenedor{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgb(204, 27, 27);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;}
+
+body{
+    background-color: rgb(179, 179, 179);
+}
+
+.listaTareas{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgb(27, 27, 204);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}

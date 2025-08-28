@@ -1,0 +1,15 @@
+#contenedor{
+    background-color: #f7f3f3;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#lista-usuarios{
+    list-style-type: none;
+    padding: 0;
+}
+#lista-usuarios li{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
