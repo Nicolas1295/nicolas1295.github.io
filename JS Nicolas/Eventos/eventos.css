@@ -1,0 +1,11 @@
+#micaja {
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.highlight {
+    background-color: yellow;
+    border: 3px dashed red;
+}

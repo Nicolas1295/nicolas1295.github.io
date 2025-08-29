@@ -1,0 +1,11 @@
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#contenedor.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
